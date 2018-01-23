@@ -29,6 +29,9 @@ public interface RouteManager
     MessageConsumer supplyTarget(
         String targetName);
 
+    MessagePredicate supplyTryTarget(
+        String targetName);
+
     void setThrottle(
         String targetName,
         long streamId,
